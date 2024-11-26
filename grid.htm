@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRID</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background-color: purple;
+      }
+      /* .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+      }
+      p {
+        min-height: 100px;
+        margin-top: 20px;
+        padding: 0px 10px;
+        color: #181717;
+        text-align: justify;
+        background-color: violet;
+      } */
+      .layout div {
+        color: wheat;
+        font-size: 32px;
+        padding: 20px;
+        border: 3px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .layout {
+        min-height: 80vh;
+        margin: 20px 30px;
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(1fr, 3fr));
+      }
+      .header,
+      .footer {
+        display: grid;
+        grid-column: span 3;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container">
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+          obcaecati debitis culpa necessitatibus sunt iure iste sequi amet
+          eveniet! Fuga delectus harum est assumenda quae. Similique accusantium
+          ducimus commodi! Enim!
+        </p>
+      </div>
+      <div>
+        <p>
+          Excepturi non odio earum totam dolores fugiat perspiciatis
+          repellendus, eius quam soluta aliquam dignissimos minus facere beatae
+          ratione numquam vero eveniet ipsa. Fugit ducimus a, cumque aperiam
+          voluptatem illo ad.
+        </p>
+      </div>
+
+      <div>
+        <p>
+          Sint eius quia praesentium, dolor amet qui in sequi asperiores hic
+          voluptatem obcaecati quod vero rerum illo fugiat placeat vitae itaque
+          atque tempore corporis? Nostrum, obcaecati? Possimus eos libero
+          perspiciatis?
+        </p>
+      </div>
+      <div>
+        <p>
+          Recusandae ex voluptate magni dolore nemo soluta voluptatum tenetur
+          ipsum optio necessitatibus. Natus, obcaecati harum nobis at ex eum
+          aliquam distinctio accusamus tempore, recusandae expedita ipsam, ipsa
+          vero iste molestiae!
+        </p>
+      </div>
+      <div>
+        <p>
+          Architecto, tenetur? Magnam accusantium magni reiciendis aspernatur
+          minima dolorem itaque, necessitatibus aliquid doloremque distinctio
+          illo. Odio, at nemo eius ipsum blanditiis fugit tenetur? Mollitia
+          numquam reprehenderit consequuntur nemo! Illo, accusantium.
+        </p>
+      </div>
+      <div>
+        <p>
+          Quos quae cum dolor nisi? Sunt minima placeat tempora at fuga
+          consequatur alias ullam suscipit necessitatibus quia quaerat corrupti
+          sapiente, perferendis tenetur fugiat nulla molestiae. Similique soluta
+          a porro natus!
+        </p>
+      </div>
+      <div>
+        <p>
+          Mollitia maiores consequuntur, provident molestias atque expedita
+          minima accusamus molestiae, quos odio error? Sint at, esse doloribus
+          necessitatibus aliquid libero laudantium voluptatibus laborum fugiat
+          ipsam voluptatum sit quod perspiciatis vitae!
+        </p>
+      </div>
+      <div>
+        <p>
+          Deleniti molestias velit tempora veritatis repellat ipsum, facilis
+          animi dicta laborum perspiciatis, doloremque, quis porro. Ad, fugit,
+          necessitatibus ut distinctio, voluptatem pariatur et obcaecati
+          repudiandae voluptate quod quidem molestiae velit!
+        </p>
+      </div>
+      <div>
+        <p>
+          Sequi aut, doloribus sunt eum, nam saepe explicabo laudantium
+          dignissimos quae quibusdam labore iusto modi veritatis magnam nihil
+          beatae nobis quidem nostrum eveniet ratione optio id! Nulla nobis
+          voluptate facilis.
+        </p>
+      </div>
+    </div> -->
+    <div class="layout">
+      <div class="header">Header</div>
+      <div class="sidebar1">sidebar1</div>
+      <div class="content">content</div>
+      <div class="sidebar2">sidebar2</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>

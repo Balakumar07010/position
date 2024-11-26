@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Positioning Element</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        position: relative;
+      }
+
+      .static {
+        position: sticky;
+        top: 0px;
+        background: #cc0000;
+        color: #ffffff;
+        padding: 30px;
+        z-index: 1;
+      }
+
+      span {
+        padding: 5px;
+        border: 1px #ffffff dotted;
+        font-size: 2rem;
+      }
+      .input-box {
+        margin: 20px 10px;
+        position: relative;
+      }
+      input {
+        padding: 20px 5px;
+      }
+      label {
+        position: absolute;
+        background-color: #ffffff;
+        top: 18px;
+        left: 10px;
+        transition: all 0.7s;
+      }
+      input:focus ~ label {
+        transform: translateY(-27px);
+        z-index: 2;
+      }
+      .box {
+        position: relative;
+        top: 100px;
+        left: 20px;
+        width: 10em;
+        height: 100px;
+        background: #000;
+      }
+      .box1 {
+        position: relative;
+        top: 120px;
+        /* left: 100px; */
+        width: 37.8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="static">
+      This div has
+      <span>position: static;</span>
+    </div>
+    <div class="input-box">
+      <div class="int-grp">
+        <input type="text" id="fname" /><label for="fname">Enter a Name</label>
+      </div>
+    </div>
+    <div class="box"></div>
+    <div class="box box1"></div>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <style>
+      img {
+        width: 300px;
+        transition: all 2s;
+      }
+      .box {
+        width: 20px;
+        height: 20px;
+        background: #000;
+        /* border-radius: 50%; */
+        position: relative;
+        top: 100px;
+        left: 40px;
+        transition: all 0.6s;
+        animation-name: boxAni;
+        animation-duration: 10s;
+      }
+      /* .box:hover {  */
+      /* transform: translateY(200px); */
+      /* transform: translateX(-1000px); */
+      /* transform: translateY(-200px); */
+      /* } */
+
+      @keyframes box-animation {
+        from {
+          transform: translateX(1000px);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes boxAni {
+        0% {
+          top: 100px;
+          left: 40px;
+          transform: rotate(180deg);
+        }
+        25% {
+          left: 500px;
+          top: 100px;
+          /* transform: rotate(360deg); */
+        }
+        50% {
+          left: 500px;
+          top: 300px;
+          /* transform: rotate(360deg); */
+        }
+        75% {
+          left: 40px;
+          top: 300px;
+          /* transform: rotate(360deg); */
+        }
+        100% {
+          top: 100px;
+          left: 40px;
+        }
+      }
+
+      /* img:hover { */
+      /* translate */
+      /* transform: traslateX(100px); */
+      /* Rotate */
+      /* transform: rotate(30deg); */
+      /* Scale */
+      /* transform: scale(1.2); */
+      /* Skew */
+      /* transform: skew(180deg); */
+      /* matrix */
+      /* transform: matrix(3.2, 0, 0, 3.2, 220, 220) rotate(360deg); */
+      /* } */
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <!-- <img
+        src="pngtree-airplane-clipart-plane-taking-off-png-image_5564333-removebg-preview.png"
+        alt="plane"
+      /> -->
+    </div>
+  </body>
+</html>
